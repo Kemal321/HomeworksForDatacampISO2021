@@ -1,0 +1,96 @@
+###############################################################################
+#               Kullanıcı giris uygulaması (by using If statement)            #
+#                             Coder:Kemalettin Kara                           #  
+###############################################################################
+entrance="""
+Welcome Sir user 
+Please use your user name and password to acces database
+in order ;
+
+Name:
+Password:
+"""
+print(entrance)
+
+name1= "isoAkademi"
+password1="dataCamp2021"
+
+user=input("Please enter user name:")
+password=input("Please enter password:")
+
+
+if name1 == user and password1==password:
+    print("\nGood Welcome again Sir have a nice day...")
+elif name1 == user and password1 != password:
+    print("Password is wrong please check it\n If you forgot your password take a temporal password")
+elif name1 != user and password1==password:
+    print("User name is wrong please check it\n DO NOT USE INVALID LETTER")
+    
+  ############################OUTPUT###################################
+  runfile('C:/Users/Kemaleddin/.spyder-py3/temp.py', wdir='C:/Users/Kemaleddin/.spyder-py3')
+
+Welcome Sir user 
+Please use your user name and password to acces database
+in order ;
+
+Name:
+Password:
+
+
+Please enter user name:ahmet
+
+Please enter password:dataCamp2021
+User name is wrong please check it
+ DO NOT USE INVALID LETTER
+
+runfile('C:/Users/Kemaleddin/.spyder-py3/temp.py', wdir='C:/Users/Kemaleddin/.spyder-py3')
+
+Welcome Sir user 
+Please use your user name and password to acces database
+in order ;
+
+Name:
+Password:
+
+
+Please enter user name:isoAkademi
+
+Please enter password:dataCamp2021
+
+Good Welcome again Sir have a nice day...
+#################################################################################################################################################################################
+###############################################################################
+#     Girilen sayının katlarını 20 bine kadar bulan program (While Loops)     #
+#                             Coder:Kemalettin Kara                           #  
+###############################################################################
+
+sayi=int(input("Please enter a number to find divisors until 20.000:" ))
+
+divisor=1;
+divisors=[]
+
+while(True):
+    if divisor ==20000:
+        break
+    if sayi %divisor == 0 :
+        divisors.append(divisor)
+        divisor += 1
+    else:
+        divisor += 1
+print(*divisors,sep=" -- ")  
+ 
+ ############################OUTPUT###################################
+  runfile('D:/ISO-PYTHON-DATACAMP-ÖDEVLERİ/untitled2.py', wdir='D:/ISO-PYTHON-DATACAMP-ÖDEVLERİ')
+
+Please enter a number to find divisors until 20.000:20000
+1 -- 2 -- 4 -- 5 -- 8 -- 10 -- 16 -- 20 -- 25 -- 32 -- 40 -- 50 -- 80 -- 100 -- 125 -- 160 -- 200 -- 250 -- 400 -- 500 -- 625 -- 800 -- 1000 -- 1250 -- 2000 -- 2500 -- 4000 -- 5000 -- 10000
+
+runfile('D:/ISO-PYTHON-DATACAMP-ÖDEVLERİ/untitled2.py', wdir='D:/ISO-PYTHON-DATACAMP-ÖDEVLERİ')
+
+Please enter a number to find divisors until 20.000:156
+1 -- 2 -- 3 -- 4 -- 6 -- 12 -- 13 -- 26 -- 39 -- 52 -- 78 -- 156
+
+################################################################################################################################################################################
+
+
+
